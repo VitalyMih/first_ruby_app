@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # Метод GET у action index в ArticlesController
   get '/articles', to: 'articles#index'
+  get '/articles/:id', to: 'articles#show'
 
   # Defines the root path route ("/")
   # root "articles#index"
