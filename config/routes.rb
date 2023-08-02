@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   # get '/articles/:id', to: 'articles#show'
 
   # Заменяет методы, чтобы не прописывать в ручную
-  resources :articles
+  resources :articles do
+    resources :comments
+  end
 
   # Defines the root path route ("/")
   # root "articles#index"
